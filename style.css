@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Mona ;
+    src: url(./Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mona;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.part1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.part1 img{
+    padding: 20px;
+    height: 90px;
+    width: 150px;
+    object-fit: cover;
+   
+}
+
+.part2{
+    padding: 50px; 
+}
+
+.part2 button{
+    margin-right: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.hero{
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.hero1{
+    height: 100%;
+    width: 100%;
+    
+    padding: 50px;
+}
+
+
+.hero1 h1{
+    font-size: 48px;
+    font-stretch: expanded;
+    font-weight: 600;
+}
+
+.hero1 h2{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.hero1-part1{
+    margin-top: 50px;
+}
+
+.hero1-part1>button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input{
+     margin-top: 10px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.input i {
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(237, 123, 142);
+    padding: 10px;
+    border-radius: 30px;
+
+
+}
+
+.input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    
+}
+
+.hero2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.hero2 video{
+    position: absolute;
+    height: 600px;
+    width: 600px;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/45215902/file/720a3eb8bddef3b420b355aac07a9365.png?format=webp&resize=1200x900&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card1:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card1-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card1:hover .card1-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card1-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card1-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card1-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card1-buttons button:hover {
+    background-color: white;
+}
+
+.card1-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
