@@ -31,6 +31,22 @@ html,body{
     justify-content: space-between;
 }
 
+.navbar .part1 a{
+    font-weight: 600;
+}
+
+.navbar .part2 .btn1{
+    background: transparent;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar .part2 .btn2{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
 .part1 {
     display: flex;
     align-items: center;
@@ -42,6 +58,7 @@ html,body{
     text-decoration: none;
     color: black;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .part1 img{
@@ -61,6 +78,7 @@ html,body{
     padding: 15px 20px;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 
@@ -100,6 +118,14 @@ html,body{
     border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
+    background-color: transparent;
+}
+
+.hero1-part1>button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .input{
@@ -263,3 +289,703 @@ html,body{
 }
 
 
+
+.card2 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/45225745/file/9f1fe44a766ee2b190cd5907fc13aeb0.webp?format=webp&resize=1200x900&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card2:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card2-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card2:hover .card2-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card2-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card2-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card2-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card2-buttons button:hover {
+    background-color: white;
+}
+
+.card2-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
+
+.card3 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/41839800/file/original-4b3c0ae760b56b467684a17662fd0940.png?resize=400x300&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card3:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card3-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card3:hover .card3-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card3-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card3-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card3-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card3-buttons button:hover {
+    background-color: white;
+}
+
+.card3-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
+.card4 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/42948395/file/original-1813764c24fc14fb721d40257ae8ffc8.png?resize=400x300&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card4:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card4-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card4:hover .card4-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card4-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card4-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card4-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card4-buttons button:hover {
+    background-color: white;
+}
+
+.card4-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
+.card5 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/12389995/file/original-3d25cb98a5d18ccc6d78596dce71faa7.png?resize=400x300&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card5:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card5-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card5:hover .card5-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card5-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card5-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card5-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card5-buttons button:hover {
+    background-color: white;
+}
+
+.card5-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
+.card6 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/45165522/file/e9050dc76dbcc64ede85118da12cc1c8.png?format=webp&resize=640x480&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card6:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card6-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card6:hover .card6-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card6-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card6-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card6-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card6-buttons button:hover {
+    background-color: white;
+}
+
+.card6-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+.card7 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/45224662/file/0c694d60fa5ae4009a4afd6ea59c7c39.png?format=webp&resize=640x480&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card7:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card7:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card7-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card7:hover .card7-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card7-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card7-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card7-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card7-buttons button:hover {
+    background-color: white;
+}
+
+.card7-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
+
+
+
+.card8 {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(https://cdn.dribbble.com/userupload/45224044/file/8d62bb3fb76d706440f07b3acf6facd9.png?format=webp&resize=640x480&vertical=center);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card8:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Add a subtle gradient overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card8:hover .overlay {
+    opacity: 1;
+}
+
+/* Title + Buttons Container */
+.card8-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+/* Fade-in and slide-up on hover */
+.card8:hover .card8-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Title */
+.card8-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Buttons group */
+.card8-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card8-buttons button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card8-buttons button:hover {
+    background-color: white;
+}
+
+.card8-part2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.desc{
+    padding-top:10px ;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+}
+
+.desc2 span{
+    margin-right: 15px;
+}
